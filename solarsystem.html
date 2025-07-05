@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <title>Solar System</title>
+    <style>
+ body{
+    background-color:black;
+ }
+        .sun{
+        height:150px;
+        width:150px;
+        border-radius:50%;
+ left: 50%;
+ top:50%;
+ position: absolute;
+transform:translate(-50%,-50%);
+background-size: cover;
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSogu-8y-9Yed-dwG5wieW4RAZ1gsfzLmUp2w&s");   
+ }
+        .mercury-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatemercury 4s linear infinite;
+            transform-origin:center;       
+        }
+                .mercury{
+            width:30px;
+            height:30px;
+          background-color:grey;
+            border-radius:50%;
+            position:absolute;
+            top:-5px;
+  left:70px;
+      background-size: cover;
+  background-image:url("https://bigkidscience.com/planetary-tour/wp-content/uploads/2019/09/mercury-surface.jpg");
+        }
+
+        .venus-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatevenus 6s linear infinite;
+transform-origin:center;
+        }
+                .venus{
+            width:35px;
+            height:35px;
+background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Venus_globe.jpg/250px-Venus_globe.jpg");            border-radius:50%;
+            position:absolute;
+            background-size: cover;
+            top:-10px;
+            left:120px;
+
+        }
+       
+          .earth-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatearth 7s linear infinite;
+            transform-origin:center;      
+        }
+                .earth{
+            width:35px;
+            height:35px;
+          background-color:rgb(13, 240, 9);
+            border-radius:50%;
+            background-size:cover;
+            background-image:url("https://images.pexels.com/photos/87651/earth-blue-planet-globe-planet-87651.jpeg?cs=srgb&dl=pexels-pixabay-87651.jpg&fm=jpg");
+            position:absolute;
+            top:-20px;
+            left:180px;
+        }
+                  .mars-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatemars 10s linear infinite;
+            transform-origin:center;      
+        }
+                .mars{
+            width:37px;
+            height:37px;
+          background-color:rgb(230, 62, 16);
+            border-radius:50%;
+            position:absolute;
+            top:-25px;
+            left:240px;
+            background-size:cover;
+            background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_El-LwDt3EGV6S5p6e2f9PEvBbsPoZeeCDw&s");
+        }
+    .jupiter-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatejupiter 5s linear infinite;
+            transform-origin:center;
+      
+        }
+                .jupiter{
+            width:70px;
+            height:70px;
+            background-size:cover;
+background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4jMLF7gMgxIfVa-75V3cd_MhFaUVZ1jJd9zmdBC5FFETE_YEQfo7SVsBb-vPXJQfTzg8&usqp=CAU");            border-radius:50%;
+            position:absolute;
+            top:-30px;
+            left:290px;
+        }
+    .saturn-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotatesaturn 6s linear infinite;
+            transform-origin:center;
+      
+        }
+                .saturn{
+            width:38px;
+            height:38px;
+background-image:url("https://eos.org/wp-content/uploads/2019/10/saturn-storm.jpg");      
+      border-radius:50%;
+      background-size: cover;
+            position:absolute;
+            top:-35px;
+            left:360px;
+        }
+            .uranus-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotateuranus 6s linear infinite;
+            transform-origin:center;
+      
+        }
+                .uranus{
+            width:40px;
+            height:40px;
+background-color: darksalmon;      border-radius:50%;
+      background-size: cover;
+            position:absolute;
+            top:-37px;
+            left:360px;
+        }
+
+    .neptune-orbit{
+            border-radius:50%;
+            position:absolute;
+            top: 50%;
+            left:50%;
+            animation:rotateneptune 8s linear infinite;
+            transform-origin:center;      
+        }
+                .neptune{
+            width:40px;
+            height:40px;
+    border-radius:50%;
+    background-color: aquamarine;
+background-size: cover;    position:absolute;
+            top:-40px;
+            left:410px;
+ 
+
+        }
+
+              @keyframes rotatemercury{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+              @keyframes rotatevenus{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        @keyframes rotatearth{
+            100%{
+                transform:rotate(360deg);
+            }
+        }     
+           @keyframes rotatemars{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+                     @keyframes rotatejupiter{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+        
+              @keyframes rotatesaturn{
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+       
+              @keyframes rotateuranus{
+            100%{
+                                transform:rotate(360deg);
+
+            }
+        }
+              @keyframes rotateneptune{
+            100%{
+                                transform:rotate(360deg);
+
+            }
+        }
+    </style>
+</head>
+    <body>
+        <h1>Solar System</h1>
+        <div class="sun"></div>
+                 <div class="mercury-orbit">   
+                    <div class="mercury">
+                        </div>
+                        </div>
+                <div class="venus-orbit">
+                    <div class="venus"></div>
+                    </div>
+                        <div class="earth-orbit">     
+                    <div class="earth">
+                        </div>
+                        </div>
+                         <div class="mars-orbit"> 
+                    <div class="mars">
+                           </div>
+                        </div>
+                        
+                         <div class="jupiter-orbit">     
+                    <div class="jupiter">
+                           </div>
+                        </div>
+                         <div class="saturn-orbit">     
+                    <div class="saturn">
+                           </div>
+                        </div>
+                                 <div class="uranus-orbit">     
+                    <div class="uranus">
+                           </div>
+                        </div>
+                      <div class="neptune-orbit">     
+                    <div class="neptune">
+                           </div>
+                        </div>
+       
+    </body>
+</html>
